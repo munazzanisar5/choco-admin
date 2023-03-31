@@ -1,0 +1,103 @@
+
+.cards_bg{
+    background-color: #F4D7EDD9;
+.navbar{
+    background-color: #AC7F7F;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .menu{
+        padding-top: 1rem;
+        a{
+            font-size: 2.25rem;
+            color: #ffffff;
+            font-family: 'Philosopher', sans-serif;
+            padding: 0rem 1rem;
+        }
+    }
+    .logout{
+        padding-top: 0.3rem;
+    }
+}
+
+.cards_block{
+   padding: 3rem 0;
+   .card1{
+    display: flex;
+    gap: 2rem;
+    background-color: #AC7F7F;
+    border-radius: 1.375rem;
+    padding: 0;
+    // width: 23rem;
+    .choco_img{
+        background-color: #FCC5C5;
+        padding: 1.2rem 0.5rem;
+        border-radius: 1.375rem;
+        .image{
+            width: 7.5rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .choco_deatils{
+        padding-top: 1rem;
+        color: #ffffff;
+        h2{
+           font-size: 1.875rem;
+           font-weight: 700;
+           line-height: 2.125rem; 
+           font-family: 'Philosopher';
+            font-style: normal;
+        }
+        p{
+            font-size: 1.063rem;
+            line-height: 1.188rem;
+            padding: 0.5rem 2.5rem 0 0;
+        }
+        .icon{
+            padding-top: 2rem;
+            button{
+                background: #FCC5C5;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 34.5px;
+                padding: 0rem 2rem;
+                line-height: 2rem;
+                &::before{
+                    font-size: 1.2rem;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: #2B2B2B;
+                    content: "\f303";
+                }
+                &:nth-child(2)::before{
+                    font-size: 1rem;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    color: #EB3223;
+                    content: "\f1f8";
+                    
+                }
+                &:nth-child(2){
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+    }
+    }
+}
+.add_item{
+    text-align: right;
+    .add_choco{
+       width: 3rem;
+      margin: auto  3rem auto;
+        background-color: #AC7F7F;
+        border-radius: 6rem;
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+     }
+}
+
+}

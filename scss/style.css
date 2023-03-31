@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Philosopher", sans-serif;
+}
+
+button {
+  color: #ffffff;
+  padding: 0.5rem 3.5rem;
+  border-radius: 3rem;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 2.125rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  background: #AC7F7F;
+  box-shadow: 0px 7px #DCA7A7;
+}
+
+.background_img {
+  background-image: url(/images/image\ 1.png);
+  padding: 5rem 0;
+}
+.background_img .signin_block {
+  background-color: rgba(244, 215, 237, 0.8509803922);
+  padding: 3.2rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.background_img .signin_block .heading h2 {
+  font-size: 3.75rem;
+  color: #AC7F7F;
+}
+.background_img .signin_block .signin_form input {
+  display: block;
+  width: 37rem;
+  margin: 3rem auto auto;
+  background: rgba(194, 134, 134, 0.38);
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  box-shadow: 0px 5px #AC7F7F;
+  border-radius: 2rem;
+  font-size: 1.563rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.background_img .signin_block .signin_form input::placeholder {
+  color: #ffffff;
+}
+.background_img .signin_block .signin_form input:focus {
+  outline: none;
+}
+.background_img .signin_block .signin_form input:nth-child(2) {
+  margin-top: 3rem;
+}
+.background_img .signin_block .signin_btn {
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 576px) {
+  button {
+    font-size: 1.125rem;
+  }
+  .background_img {
+    padding: 5rem 3rem;
+  }
+  .background_img .signin_block .heading h2 {
+    font-size: 3rem;
+  }
+  .background_img .signin_block .signin_form input {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 786px) {
+  .background_img .signin_block .signin_form input {
+    width: 100%;
+  }
+}
+.background_img {
+  background-image: url(/images/image\ 1.png);
+  padding: 3.65rem 0;
+}
+.background_img .signin_block {
+  background-color: rgba(244, 215, 237, 0.8509803922);
+  padding: 0rem 0.7rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+.background_img .signin_block .left_block {
+  background: rgba(194, 134, 134, 0.38);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+}
+.background_img .signin_block .right_block {
+  padding: 1rem;
+}
+.background_img .signin_block .right_block .heading h2 {
+  font-size: 3.75rem;
+  color: #AC7F7F;
+}
+.background_img .signin_block .right_block .signin_form input {
+  display: block;
+  width: 25rem;
+  margin: 1.5rem auto auto;
+  background: rgba(194, 134, 134, 0.38);
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  box-shadow: 0px 5px #AC7F7F;
+  border-radius: 2rem;
+  font-size: 1.563rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.background_img .signin_block .right_block .signin_form input::placeholder {
+  color: #ffffff;
+}
+.background_img .signin_block .right_block .signin_form input:focus {
+  outline: none;
+}
+.background_img .signin_block .right_block .signin_form input:nth-child(2) {
+  margin-top: 1.5rem;
+}
+.background_img .signin_block .right_block .signup_btn {
+  padding: 2rem 0;
+}
+
+.cards_bg {
+  background-color: rgba(244, 215, 237, 0.8509803922);
+}
+.cards_bg .navbar {
+  background-color: #AC7F7F;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.cards_bg .navbar .menu {
+  padding-top: 1rem;
+}
+.cards_bg .navbar .menu a {
+  font-size: 2.25rem;
+  color: #ffffff;
+  font-family: "Philosopher", sans-serif;
+  padding: 0rem 1rem;
+}
+.cards_bg .navbar .logout {
+  padding-top: 0.3rem;
+}
+.cards_bg .cards_block {
+  padding: 3rem 0;
+}
+.cards_bg .cards_block .card1 {
+  display: flex;
+  gap: 2rem;
+  background-color: #AC7F7F;
+  border-radius: 1.375rem;
+  padding: 0;
+}
+.cards_bg .cards_block .card1 .choco_img {
+  background-color: #FCC5C5;
+  padding: 1.2rem 0.5rem;
+  border-radius: 1.375rem;
+}
+.cards_bg .cards_block .card1 .choco_img .image {
+  width: 7.5rem;
+}
+.cards_bg .cards_block .card1 .choco_img .image img {
+  width: 100%;
+}
+.cards_bg .cards_block .card1 .choco_deatils {
+  padding-top: 1rem;
+  color: #ffffff;
+}
+.cards_bg .cards_block .card1 .choco_deatils h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+  font-family: "Philosopher";
+  font-style: normal;
+}
+.cards_bg .cards_block .card1 .choco_deatils p {
+  font-size: 1.063rem;
+  line-height: 1.188rem;
+  padding: 0.5rem 2.5rem 0 0;
+}
+.cards_bg .cards_block .card1 .choco_deatils .icon {
+  padding-top: 2rem;
+}
+.cards_bg .cards_block .card1 .choco_deatils .icon button {
+  background: #FCC5C5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 34.5px;
+  padding: 0rem 2rem;
+  line-height: 2rem;
+}
+.cards_bg .cards_block .card1 .choco_deatils .icon button::before {
+  font-size: 1.2rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #2B2B2B;
+  content: "\f303";
+}
+.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2)::before {
+  font-size: 1rem;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #EB3223;
+  content: "\f1f8";
+}
+.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2) {
+  margin-left: 1.2rem;
+}
+.cards_bg .add_item {
+  text-align: right;
+}
+.cards_bg .add_item .add_choco {
+  width: 3rem;
+  margin: auto 3rem auto;
+  background-color: #AC7F7F;
+  border-radius: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
