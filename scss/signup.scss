@@ -1,6 +1,10 @@
 .background_img{
     background-image: url(/images/image\ 1.png);
     padding: 3.65rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     .signin_block{
         background-color: #F4D7EDD9;
         padding: 0rem 0.7rem;
@@ -29,7 +33,7 @@
                 margin: 1.5rem auto auto;
                 background: rgba(194, 134, 134, 0.38);
                 color: #ffffff;
-                padding: 0.8rem 2rem;
+                padding: 0.3rem 2rem;
                 box-shadow: 0px 5px  #AC7F7F;
                 border-radius: 2rem;
                 font-size: 1.563rem;
@@ -49,7 +53,14 @@
             }
         }
         .signup_btn{
-            padding: 2rem 0;
+            padding: 1.5rem 0;
+        }
+        .signin_link{
+            a{
+                color: #AC7F7F;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
         }
         }
     }

@@ -24,6 +24,10 @@ button {
 .background_img {
   background-image: url(/images/image\ 1.png);
   padding: 5rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 .background_img .signin_block {
   background-color: rgba(244, 215, 237, 0.8509803922);
@@ -38,10 +42,10 @@ button {
 .background_img .signin_block .signin_form input {
   display: block;
   width: 37rem;
-  margin: 3rem auto auto;
+  margin: 2rem auto auto;
   background: rgba(194, 134, 134, 0.38);
   color: #ffffff;
-  padding: 0.8rem 2rem;
+  padding: 0.5rem 2rem;
   box-shadow: 0px 5px #AC7F7F;
   border-radius: 2rem;
   font-size: 1.563rem;
@@ -55,10 +59,18 @@ button {
   outline: none;
 }
 .background_img .signin_block .signin_form input:nth-child(2) {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 .background_img .signin_block .signin_btn {
-  padding: 2rem 0;
+  padding-top: 2rem;
+}
+.background_img .signin_block .signup_link {
+  padding: 1rem 0;
+}
+.background_img .signin_block .signup_link a {
+  color: #AC7F7F;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 @media screen and (max-width: 576px) {
@@ -84,6 +96,10 @@ button {
 .background_img {
   background-image: url(/images/image\ 1.png);
   padding: 3.65rem 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 .background_img .signin_block {
   background-color: rgba(244, 215, 237, 0.8509803922);
@@ -109,7 +125,7 @@ button {
   margin: 1.5rem auto auto;
   background: rgba(194, 134, 134, 0.38);
   color: #ffffff;
-  padding: 0.8rem 2rem;
+  padding: 0.3rem 2rem;
   box-shadow: 0px 5px #AC7F7F;
   border-radius: 2rem;
   font-size: 1.563rem;
@@ -126,7 +142,12 @@ button {
   margin-top: 1.5rem;
 }
 .background_img .signin_block .right_block .signup_btn {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
+}
+.background_img .signin_block .right_block .signin_link a {
+  color: #AC7F7F;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .cards_bg {

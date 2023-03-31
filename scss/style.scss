@@ -25,6 +25,10 @@ button{
 .background_img{
     background-image: url(/images/image\ 1.png);
     padding: 5rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     .signin_block{
         background-color: #F4D7EDD9;
         padding: 3.2rem;
@@ -43,10 +47,10 @@ button{
             input{
                 display: block;
                 width: 37rem;
-                margin: 3rem auto auto;
+                margin: 2rem auto auto;
                 background: rgba(194, 134, 134, 0.38);
                 color: #ffffff;
-                padding: 0.8rem 2rem;
+                padding: 0.5rem 2rem;
                 box-shadow: 0px 5px  #AC7F7F;
                 border-radius: 2rem;
                 font-size: 1.563rem;
@@ -61,12 +65,20 @@ button{
                     outline: none;
                 }
                 &:nth-child(2){
-                   margin-top: 3rem;
+                   margin-top: 2rem;
                 }
             }
         }
         .signin_btn{
-            padding: 2rem 0;
+            padding-top: 2rem;
+        }
+        .signup_link{
+            padding: 1rem 0;
+            a{
+                color: #AC7F7F;
+                font-size: 1.5rem;
+                font-weight: 700;
+            }
         }
        
     }
