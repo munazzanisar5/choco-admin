@@ -1,96 +1,105 @@
-.cards_bg {
-  background-color: rgba(244, 215, 237, 0.8509803922);
-}
-.cards_bg .navbar {
+.navbar {
   background-color: #AC7F7F;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
-.cards_bg .navbar .menu {
+.navbar .menu {
   padding-top: 1rem;
 }
-.cards_bg .navbar .menu a {
+.navbar .menu a {
   font-size: 2.25rem;
   color: #ffffff;
   font-family: "Philosopher", sans-serif;
   padding: 0rem 1rem;
 }
-.cards_bg .navbar .logout {
+.navbar .logout {
   padding-top: 0.3rem;
 }
-.cards_bg .cards_block {
+
+.cards_block {
   padding: 3rem 0;
 }
-.cards_bg .cards_block .card1 {
+.cards_block .card_container {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cards_block .card_container .card1 {
+  display: flex;
+  gap: 1rem;
   background-color: #AC7F7F;
   border-radius: 1.375rem;
   padding: 0;
 }
-.cards_bg .cards_block .card1 .choco_img {
+.cards_block .card_container .card1 .choco_img {
   background-color: #FCC5C5;
   padding: 1.2rem 0.5rem;
   border-radius: 1.375rem;
 }
-.cards_bg .cards_block .card1 .choco_img .image {
+.cards_block .card_container .card1 .choco_img .image {
   width: 7.5rem;
 }
-.cards_bg .cards_block .card1 .choco_img .image img {
+.cards_block .card_container .card1 .choco_img .image img {
   width: 100%;
 }
-.cards_bg .cards_block .card1 .choco_deatils {
-  padding-top: 1rem;
+.cards_block .card_container .card1 .choco_deatils {
+  padding: 1rem 1rem 0 0;
   color: #ffffff;
 }
-.cards_bg .cards_block .card1 .choco_deatils h2 {
+.cards_block .card_container .card1 .choco_deatils h2 {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.125rem;
   font-family: "Philosopher";
   font-style: normal;
 }
-.cards_bg .cards_block .card1 .choco_deatils p {
+.cards_block .card_container .card1 .choco_deatils p {
   font-size: 1.063rem;
   line-height: 1.188rem;
   padding: 0.5rem 2.5rem 0 0;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon {
+.cards_block .card_container .card1 .choco_deatils .icon {
   padding-top: 2rem;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button {
+.cards_block .card_container .card1 .choco_deatils .icon button {
   background: #FCC5C5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 34.5px;
   padding: 0rem 2rem;
   line-height: 2rem;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button::before {
+.cards_block .card_container .card1 .choco_deatils .icon button::before {
   font-size: 1.2rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #2B2B2B;
   content: "\f303";
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2)::before {
+.cards_block .card_container .card1 .choco_deatils .icon button:nth-child(2)::before {
   font-size: 1rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #EB3223;
   content: "\f1f8";
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2) {
+.cards_block .card_container .card1 .choco_deatils .icon button:nth-child(2) {
   margin-left: 1.2rem;
 }
-.cards_bg .add_item {
-  text-align: right;
+
+.add_item {
+  position: relative;
+  cursor: pointer;
 }
-.cards_bg .add_item .add_choco {
-  width: 3rem;
-  margin: auto 3rem auto;
+.add_item .add_chocos {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 3.5rem;
+  color: #ffffff;
   background-color: #AC7F7F;
-  border-radius: 6rem;
+  border-radius: 8rem;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;

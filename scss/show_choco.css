@@ -1,0 +1,23 @@
+.show_choco {
+  text-align: center;
+  padding: 2rem 0;
+}
+.show_choco .title h2 {
+  font-size: 2rem;
+}
+.show_choco .show_img {
+  width: 19rem;
+  margin: 0 auto;
+}
+.show_choco .show_img img {
+  width: 100%;
+}
+.show_choco .details h3 {
+  color: #AC7F7F;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.show_choco .details p {
+  font-size: 1.875rem;
+  color: #AC7F7F;
+}/*# sourceMappingURL=show_choco.css.map */

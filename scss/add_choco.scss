@@ -1,0 +1,67 @@
+
+
+.add_choco{
+    padding: 2rem 0;
+    .edit_left{
+        padding: 4rem 0 !important;
+    }
+    .add_left{
+        background: rgba(194, 134, 134, 0.38);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 2rem;
+        border: 6px dotted #AC7F7F;
+        text-align: center;
+        padding: 6.9rem 0;
+        .edit_choco_img{
+            width: 20rem;
+            margin: 0 auto;
+            img{
+                width: 100%;
+            }
+        }
+        h3{
+            padding-top: 2rem;
+            color: #AC7F7F;
+            font-size: 2.813rem;
+        }
+      
+    }
+    .add_right{
+        text-align: center;
+        padding-top: 2rem;
+       
+        h2{
+            font-size: 2rem;
+                color: #AC7F7F;
+        }
+        .add_input{
+            textarea{
+                display: block;
+                width: 25rem;
+                margin: 1.5rem auto auto;
+                background: rgba(194, 134, 134, 0.38);
+                color: #ffffff;
+                padding: 0.3rem 2rem;
+                box-shadow: 0px 5px  #AC7F7F;
+                border-radius: 2rem;
+                font-size: 1.563rem;
+                border: none; 
+                font-family: 'Poppins', sans-serif;
+                resize: none;
+                height:  8rem;
+                &::placeholder{
+                    color: #ffffff;
+                }
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+        .add_btn{
+            padding-top: 2rem;
+            button{
+                padding: 0.2rem 3.5rem;
+            }
+        }
+    }
+}

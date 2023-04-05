@@ -53,4 +53,12 @@
   color: #AC7F7F;
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+.admin {
+  text-align: center;
+  padding: 4rem 0;
+}
+.admin .admin_btn {
+  padding-top: 2rem;
 }/*# sourceMappingURL=signup.css.map */

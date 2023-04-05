@@ -7,6 +7,10 @@
   font-family: "Philosopher", sans-serif;
 }
 
+body {
+  background-color: rgba(244, 215, 237, 0.8509803922);
+}
+
 button {
   color: #ffffff;
   padding: 0.5rem 3.5rem;
@@ -19,6 +23,31 @@ button {
   transition: all 0.5s;
   background: #AC7F7F;
   box-shadow: 0px 7px #DCA7A7;
+}
+
+h2 {
+  font-size: 3.75rem;
+  color: #AC7F7F;
+}
+
+input {
+  display: block;
+  width: 25rem;
+  margin: 1.5rem auto auto;
+  background: rgba(194, 134, 134, 0.38);
+  color: #ffffff;
+  padding: 0.3rem 2rem;
+  box-shadow: 0px 5px #AC7F7F;
+  border-radius: 2rem;
+  font-size: 1.563rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+input::placeholder {
+  color: #ffffff;
+}
+input:focus {
+  outline: none;
 }
 
 .background_img {
@@ -150,100 +179,203 @@ button {
   font-weight: 700;
 }
 
-.cards_bg {
-  background-color: rgba(244, 215, 237, 0.8509803922);
+.admin {
+  text-align: center;
+  padding: 4rem 0;
 }
-.cards_bg .navbar {
+.admin .admin_btn {
+  padding-top: 2rem;
+}
+
+.navbar {
   background-color: #AC7F7F;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
 }
-.cards_bg .navbar .menu {
+.navbar .menu {
   padding-top: 1rem;
 }
-.cards_bg .navbar .menu a {
+.navbar .menu a {
   font-size: 2.25rem;
   color: #ffffff;
   font-family: "Philosopher", sans-serif;
   padding: 0rem 1rem;
 }
-.cards_bg .navbar .logout {
+.navbar .logout {
   padding-top: 0.3rem;
 }
-.cards_bg .cards_block {
+
+.cards_block {
   padding: 3rem 0;
 }
-.cards_bg .cards_block .card1 {
+.cards_block .card_container {
   display: flex;
-  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cards_block .card_container .card1 {
+  display: flex;
+  gap: 1rem;
   background-color: #AC7F7F;
   border-radius: 1.375rem;
   padding: 0;
 }
-.cards_bg .cards_block .card1 .choco_img {
+.cards_block .card_container .card1 .choco_img {
   background-color: #FCC5C5;
   padding: 1.2rem 0.5rem;
   border-radius: 1.375rem;
 }
-.cards_bg .cards_block .card1 .choco_img .image {
+.cards_block .card_container .card1 .choco_img .image {
   width: 7.5rem;
 }
-.cards_bg .cards_block .card1 .choco_img .image img {
+.cards_block .card_container .card1 .choco_img .image img {
   width: 100%;
 }
-.cards_bg .cards_block .card1 .choco_deatils {
-  padding-top: 1rem;
+.cards_block .card_container .card1 .choco_deatils {
+  padding: 1rem 1rem 0 0;
   color: #ffffff;
 }
-.cards_bg .cards_block .card1 .choco_deatils h2 {
+.cards_block .card_container .card1 .choco_deatils h2 {
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2.125rem;
   font-family: "Philosopher";
   font-style: normal;
 }
-.cards_bg .cards_block .card1 .choco_deatils p {
+.cards_block .card_container .card1 .choco_deatils p {
   font-size: 1.063rem;
   line-height: 1.188rem;
   padding: 0.5rem 2.5rem 0 0;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon {
+.cards_block .card_container .card1 .choco_deatils .icon {
   padding-top: 2rem;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button {
+.cards_block .card_container .card1 .choco_deatils .icon button {
   background: #FCC5C5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 34.5px;
   padding: 0rem 2rem;
   line-height: 2rem;
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button::before {
+.cards_block .card_container .card1 .choco_deatils .icon button::before {
   font-size: 1.2rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #2B2B2B;
   content: "\f303";
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2)::before {
+.cards_block .card_container .card1 .choco_deatils .icon button:nth-child(2)::before {
   font-size: 1rem;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #EB3223;
   content: "\f1f8";
 }
-.cards_bg .cards_block .card1 .choco_deatils .icon button:nth-child(2) {
+.cards_block .card_container .card1 .choco_deatils .icon button:nth-child(2) {
   margin-left: 1.2rem;
 }
-.cards_bg .add_item {
-  text-align: right;
+
+.add_item {
+  position: relative;
+  cursor: pointer;
 }
-.cards_bg .add_item .add_choco {
-  width: 3rem;
-  margin: auto 3rem auto;
+.add_item .add_chocos {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 3.5rem;
+  color: #ffffff;
   background-color: #AC7F7F;
-  border-radius: 6rem;
+  border-radius: 8rem;
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+}
+
+.add_choco {
+  padding: 2rem 0;
+}
+.add_choco .edit_left {
+  padding: 4rem 0 !important;
+}
+.add_choco .add_left {
+  background: rgba(194, 134, 134, 0.38);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 2rem;
+  border: 6px dotted #AC7F7F;
+  text-align: center;
+  padding: 6.9rem 0;
+}
+.add_choco .add_left .edit_choco_img {
+  width: 20rem;
+  margin: 0 auto;
+}
+.add_choco .add_left .edit_choco_img img {
+  width: 100%;
+}
+.add_choco .add_left h3 {
+  padding-top: 2rem;
+  color: #AC7F7F;
+  font-size: 2.813rem;
+}
+.add_choco .add_right {
+  text-align: center;
+  padding-top: 2rem;
+}
+.add_choco .add_right h2 {
+  font-size: 2rem;
+  color: #AC7F7F;
+}
+.add_choco .add_right .add_input textarea {
+  display: block;
+  width: 25rem;
+  margin: 1.5rem auto auto;
+  background: rgba(194, 134, 134, 0.38);
+  color: #ffffff;
+  padding: 0.3rem 2rem;
+  box-shadow: 0px 5px #AC7F7F;
+  border-radius: 2rem;
+  font-size: 1.563rem;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+  height: 8rem;
+}
+.add_choco .add_right .add_input textarea::placeholder {
+  color: #ffffff;
+}
+.add_choco .add_right .add_input textarea:focus {
+  outline: none;
+}
+.add_choco .add_right .add_btn {
+  padding-top: 2rem;
+}
+.add_choco .add_right .add_btn button {
+  padding: 0.2rem 3.5rem;
+}
+
+.show_choco {
+  text-align: center;
+  padding: 2rem 0;
+}
+.show_choco .title h2 {
+  font-size: 2rem;
+}
+.show_choco .show_img {
+  width: 19rem;
+  margin: 0 auto;
+}
+.show_choco .show_img img {
+  width: 100%;
+}
+.show_choco .details h3 {
+  color: #AC7F7F;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+.show_choco .details p {
+  font-size: 1.875rem;
+  color: #AC7F7F;
 }/*# sourceMappingURL=style.css.map */

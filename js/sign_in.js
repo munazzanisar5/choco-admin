@@ -13,10 +13,18 @@ signin_btn.onclick = async () => {
     // console.log(signin_password);
 
     if (signin_username === u.username_u && signin_password === u.password_u) {
-        alert("successfully login");
+        window.location.href = "./pages/home.html"
     }
-    else {
-        alert("not login");
+    else if(!(signin_username === u.username_u) ){
+        input_form[0].style.border= "2px solid red";
+    }
+    else if(!(signin_password === u.password_u)){
+        input_form[1].style.border= "2px solid red";
+
+    }
+    else{
+        input_form[0].style.border= "none";
+        input_form[1].style.border= "none";
     }
 
 }

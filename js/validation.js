@@ -8,16 +8,26 @@ window.onload = async() => {
    
     let signup_btn = document.querySelector(".signup_btn");
     let input = document.querySelectorAll(".form-input");
+    const form = document.getElementById("form");
 
-    signup_btn.onclick = async () => {
+
+    form.addEventListener("submit", e => {
+        e.preventDefault();
+        checkInputs();
+      });
+
+
+
+      function checkInputs(){
+    
         let ragexalphabet = /^[A-za-z]+$/;
         let ragexemail = /^\S+@\S+\.\S+$/;
         let ragexusername = /^[A-Za-z]+\d+$/;
         let ragexpassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-        !(input[0].value.match(ragexalphabet)) ? input[0].style.backgroundColor = "red" : input[0].value.match(ragexalphabet);
-        !(input[1].value.match(ragexemail)) ? input[1].style.backgroundColor = "red" : input[1].value.match(ragexemail);
-        !(input[2].value.match(ragexusername)) ? input[2].style.backgroundColor = "red" : input[2].value.match(ragexusername);
-        !(input[3].value.match(ragexpassword)) ? input[3].style.backgroundColor = "red" : input[3].value.match(ragexpassword);
+        !(input[0].value.match(ragexalphabet)) ? input[0].style.border = " 2px solid red" : input[0].style.border = " 2px solid green"  ;
+        !(input[1].value.match(ragexemail)) ? input[1].style.border = "2px solid red" : input[1].value.match(ragexemail);
+        !(input[2].value.match(ragexusername)) ? input[2].style.border = "2px solid red" : input[2].value.match(ragexusername);
+        !(input[3].value.match(ragexpassword)) ? input[3].style.border = "2px solid red" : input[3].value.match(ragexpassword);
 
         let full_name = document.querySelector(".full_name").value;
         let email = document.querySelector(".email").value;
@@ -36,8 +46,8 @@ window.onload = async() => {
         if ((input[0].value.match(ragexalphabet)) && (input[1].value.match(ragexemail)) && (input[2].value.match(ragexusername)) && (input[3].value.match(ragexusername))) {
             window.location.href = "../index.html"
         }
+    
     };
-
     // console.log((password));
 
     // let admin1 = localStorage.getItem("user");
