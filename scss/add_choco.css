@@ -58,4 +58,10 @@
 }
 .add_choco .add_right .add_btn button {
   padding: 0.2rem 3.5rem;
+}
+
+@media screen and (max-width: 576px) {
+  .add_choco .add_left .add_choco_img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=add_choco.css.map */

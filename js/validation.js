@@ -66,4 +66,29 @@ window.onload = async() => {
         input_form[1].style.backgroundColor="red"
     };
     }; */
+
+
+    // localStorage.getItem('user', JSON.stringify(admin_updates));
+    //  JSON.parse(localStorage.setItem('admin_updates'));
+    //  user.Full_name_u=admin_updates.admin_name_v;
+
+    localStorage.setItem('user', JSON.stringify(admin_new_u));
+    JSON.parse(localStorage.getItem('users'));
+
+    let admin_updates = JSON.parse(window.localStorage.getItem('users'));
+
+    let full_name_v = document.querySelector(".full_name");
+    let email = document.querySelector(".email");
+    let password = document.querySelector(".password");
+
+    full_name_v=admin_updates.admin_name_v
+
 };
+
+// let logout= document.querySelector(".logout");
+
+// logout.onclick=()=>{
+//     // localStorage.removeItem("u");
+//     window.location.href = "./index.html"
+//     logout.style.border="2px solid red";
+// }

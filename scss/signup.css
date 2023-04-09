@@ -1,10 +1,6 @@
 .background_img {
   background-image: url(../images/image\ 1.png);
   padding: 3.65rem 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 .background_img .signin_block {
   background-color: rgba(244, 215, 237, 0.8509803922);
@@ -61,4 +57,19 @@
 }
 .admin .admin_btn {
   padding-top: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .background_img .signin_block {
+    margin: 0 2rem;
+  }
+  .background_img .signin_block .left_block {
+    width: 100%;
+  }
+  .background_img .signin_block .left_block img {
+    width: 100%;
+  }
+  .background_img .signin_block .right_block .signin_form input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=signup.css.map */

@@ -20,4 +20,10 @@
 .show_choco .details p {
   font-size: 1.875rem;
   color: #AC7F7F;
+}
+
+@media screen and (max-width: 576px) {
+  .show_choco .show_img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=show_choco.css.map */

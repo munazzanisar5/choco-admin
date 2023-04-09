@@ -120,6 +120,9 @@ h2{
     button{
         font-size: 1.125rem;  
     }
+    input,img, textarea{
+        width: 100% !important;
+    }
     .background_img {
         padding: 5rem 3rem;
         .signin_block {
