@@ -12,10 +12,14 @@
   color: #ffffff;
   font-family: "Philosopher", sans-serif;
   padding: 0rem 1rem;
+  cursor: pointer;
 }
 .navbar .logout {
   padding-top: 0.3rem;
   cursor: pointer;
+}
+.navbar .mobile_nav_bar {
+  display: none;
 }
 
 .cards_block {
@@ -105,4 +109,109 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .logout {
+    display: none;
+  }
+  .navbar .mobile_nav_bar .hamburg {
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 999;
+  }
+  .navbar .mobile_nav_bar .hamburg span {
+    display: block;
+    height: 0.3rem;
+    width: 2.2rem;
+    background-color: #ffffff;
+    padding: 0rem 1rem;
+    margin: 0.4rem;
+  }
+  .navbar .mobile_nav_bar .mobile {
+    display: none;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 5rem 0;
+    margin-top: 6rem;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 99;
+    background-color: #AC7F7F;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu a {
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-family: "Philosopher", sans-serif;
+    padding: 0rem 1rem;
+    cursor: pointer;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu .mobile_logout {
+    width: 30%;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu .mobile_logout img {
+    width: 100%;
+  }
+}
+@media (max-width: 786px) {
+  .navbar .menu {
+    display: none;
+  }
+  .navbar .logout {
+    display: none;
+  }
+  .navbar .mobile_nav_bar .hamburg {
+    width: 100%;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 999;
+  }
+  .navbar .mobile_nav_bar .hamburg span {
+    display: block;
+    height: 0.3rem;
+    width: 2.2rem;
+    background-color: #ffffff;
+    padding: 0rem 1rem;
+    margin: 0.4rem;
+  }
+  .navbar .mobile_nav_bar .mobile {
+    display: none;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 5rem 0;
+    margin-top: 6rem;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    z-index: 99;
+    background-color: #AC7F7F;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu a {
+    font-size: 2.25rem;
+    color: #ffffff;
+    font-family: "Philosopher", sans-serif;
+    padding: 0rem 1rem;
+    cursor: pointer;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu .mobile_logout {
+    width: 30%;
+  }
+  .navbar .mobile_nav_bar .mobile .mobile_menu .mobile_logout img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=home.css.map */
